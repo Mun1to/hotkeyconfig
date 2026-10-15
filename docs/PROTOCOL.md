@@ -130,8 +130,25 @@ Per-key RGB does exist in this family, on the **K8850** (`514c:8850`, 16 keys an
 which uses a completely different LED packet with 3 bytes of true RGB for every key:
 
 ```
-[0x03, 0xFE, 0xB0, layer, mode, R, G, B, 16x per-key RGB]
+[0x03, 0xFE, 0xB0, layer, mode, 17x RGB]
 ```
+
+- There is **no global colour field**. Bytes `5..7` are key 1, bytes `8..10` key 2, and so
+  on: one flat run of 17 RGB triplets starting at byte 5, 56 bytes in total. Only as many
+  triplets as the board has keys are visible; the rest map to unpopulated slots.
+- `layer` is **zero based** here, unlike the key records of the same device, which are one
+  based.
+- Modes: `off = 0`, `static = 1`, `reactive = 2`, `ripple = 3`, `rainbow = 4`. The mode and
+  the triplets are independent fields, and every mode honours the per-key colours.
+- `[0x03, 0xFB, 0xFB, 0xFB]` must be sent **immediately before every LED write**. Without it
+  the LED packet is accepted and silently discarded.
+
+Reading bytes `5..7` as a base colour followed by 16 per-key triplets gives a packet of the
+same size (`8 + 16*3 = 5 + 17*3`) and the same result for solid colours, so it is an easy
+mistake to make. With per-key colours it shifts every colour one key to the right: sending
+base `red` with keys `[red, blue, orange, green, off, ...]` lights up as
+`red, red, blue, orange, green, off, ...` on hardware. Verified on a `514c:8850` with 12 keys
+and 2 knobs, see [issue #1](https://github.com/Mun1to/hotkeyconfig/issues/1).
 
 That is a different model and a different protocol, so supporting it means writing a new
 backend, not tweaking this one.

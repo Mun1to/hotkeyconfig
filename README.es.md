@@ -1,87 +1,67 @@
 <div align="center">
 
-<img src="branding/logo-256.png" alt="HotKeyConfig" width="120" height="120" />
+<img src="branding/logo-256.png" alt="HotKeyConfig" height="88">
 
 # HotKeyConfig
 
-**Cada tecla, a tu manera.** Convierte un macropad barato de AliExpress en un panel donde **cada tecla ejecuta lo que tú quieras**.
+**Cada tecla, a tu manera.**
 
-🌍 [English](README.md) · Español
+Convierte un macropad barato de AliExpress en un panel donde **cada tecla ejecuta lo que tú quieras**.
 
-<p>
-  <a href="https://github.com/Mun1to/hotkeyconfig/releases/latest">
-    <img src="https://img.shields.io/github/v/release/Mun1to/hotkeyconfig?label=versi%C3%B3n&style=for-the-badge&color=0B4FA4" alt="Última versión" />
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/licencia-MIT-0B4FA4?style=for-the-badge" alt="Licencia MIT" />
-  </a>
-  <a href="SECURITY.md">
-    <img src="https://img.shields.io/badge/sin%20drivers-sin%20Zadig-22c55e?style=for-the-badge" alt="Sin drivers, sin Zadig" />
-  </a>
-</p>
+<a href="https://github.com/Mun1to/hotkeyconfig/releases/latest/download/hotkeyconfig-setup.exe"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/readme/download-windows-dark.es.svg"><img src=".github/readme/download-windows-light.es.svg" alt="Descargar el instalador de Windows"></picture></a>
 
-<p>
-  <a href="https://github.com/Mun1to/hotkeyconfig/releases/latest/download/hotkeyconfig-setup.exe">
-    <img src="branding/download-button.svg" alt="Descargar hotkeyconfig" width="320" height="72" />
-  </a>
-</p>
+Windows · [Licencia MIT](LICENSE) · actualizaciones automáticas · [sin drivers, sin Zadig](SECURITY.md)
+
+[Todas las descargas](https://github.com/Mun1to/hotkeyconfig/releases/latest) · [Seguridad](SECURITY.md) · [Issues](https://github.com/Mun1to/hotkeyconfig/issues) · [English](README.md)
 
 </div>
 
----
+<p align="center"><img src="branding/screenshots/es/01-macropad.png" alt="Pantalla principal de HotKeyConfig"></p>
 
-## ✨ Qué hace
+<p align="center">Pantalla principal: capas, luz RGB por capa y cada tecla mostrando la acción que tiene asignada.</p>
+
+## Qué hace
 
 Esos macropads `1189:8842` de AliExpress (12 teclas, 2 perillas, 3 capas) vienen con un software
 propietario que te pasan por un enlace de Google Drive. `hotkeyconfig` lo sustituye por una app de
 escritorio open source que programa el teclado **por HID nativo de Windows** y luego ejecuta tus
 acciones.
 
-- 🎹 **Cada tecla y perilla hace lo que quieras**: ejecutar scripts, abrir apps, carpetas o URLs,
-  escribir texto, controlar multimedia, enviar atajos, manejar ventanas o encadenar varias acciones.
-- ⌨️ **También tu teclado normal**: graba cualquier combinación (por ejemplo `Ctrl+Alt+S`) y
-  asígnale una acción, y **remapea teclas sueltas** (`Bloq Mayús` a `Esc`).
-- 🌈 **Iluminación RGB**: color y modo (fija, al pulsar, onda) por capa, grabados en el teclado.
-- 💡 **Color por acción**: dale un color a un control y el teclado se tiñe de ese color al
-  pulsarlo, volviendo después al color de la capa. Ojo, es **solo al pulsar**: el ch57x no puede
-  mantener un color distinto en cada tecla (ver [docs/PROTOCOL.md](docs/PROTOCOL.md)), y hace
-  falta tener el listener en marcha.
-- 🧩 **Eliges tu teclado de una lista**: ocho formas distintas, de 3 teclas y una perilla hasta 16 y
-  tres, y colocas las perillas donde las tienes de verdad.
-- 🚪 **Teclas que funcionan con la app cerrada**: las de abrir un programa o una web se pueden
-  delegar en Windows y responden sin el listener (ver más abajo, tiene sus límites).
-- 🖥️ **App de escritorio de verdad**: editor visual, tema claro/oscuro que sigue al del sistema,
-  español e inglés, arranque con Windows, instalador y **actualizaciones automáticas**.
-- 🔒 **Privada por diseño**: sin telemetría, sin llamadas de red en el listener y **no es un
-  keylogger** (ver [SECURITY.md](SECURITY.md)).
+|  |  |
+|---|---|
+| **Cada tecla y perilla hace lo que quieras** | ejecutar scripts, abrir apps, carpetas o URLs, escribir texto, controlar multimedia, enviar atajos, manejar ventanas o encadenar varias acciones. |
+| **También tu teclado normal** | graba cualquier combinación (por ejemplo `Ctrl+Alt+S`) y asígnale una acción, y **remapea teclas sueltas** (`Bloq Mayús` a `Esc`). |
+| **Iluminación RGB** | color y modo (fija, al pulsar, onda) por capa, grabados en el teclado. |
+| **Color por acción** | dale un color a un control y el teclado se tiñe de ese color al pulsarlo, volviendo después al color de la capa. Ojo, es **solo al pulsar**: el ch57x no puede mantener un color distinto en cada tecla (ver [docs/PROTOCOL.md](docs/PROTOCOL.md)), y hace falta tener el listener en marcha. |
+| **Eliges tu teclado de una lista** | ocho formas distintas, de 3 teclas y una perilla hasta 16 y tres, y colocas las perillas donde las tienes de verdad. |
+| **Teclas que funcionan con la app cerrada** | las de abrir un programa o una web se pueden delegar en Windows y responden sin el listener (ver más abajo, tiene sus límites). |
+| **App de escritorio de verdad** | editor visual, tema claro/oscuro que sigue al del sistema, español e inglés, arranque con Windows, instalador y **actualizaciones automáticas**. |
+| **Privada por diseño** | sin telemetría, sin llamadas de red en el listener y **no es un keylogger** (ver [SECURITY.md](SECURITY.md)). |
 
----
+## Capturas
 
-## 📸 Capturas
+<table>
+<tr>
+<td width="50%" valign="top"><img src="branding/screenshots/es/05-models.png" alt="Selector de modelo de teclado"><br>Elige tu teclado: Se elige por lo que se puede contar: teclas y perillas.</td>
+<td width="50%" valign="top"><img src="branding/screenshots/es/02-editor.png" alt="Editor de acciones"><br>Editor de acciones: Cada acción, su color, y si debe funcionar con la app cerrada.</td>
+</tr>
+</table>
 
-<div align="center">
-  <img src="branding/screenshots/es/01-macropad.png" alt="Pantalla principal de HotKeyConfig" width="820" />
-</div>
+<table>
+<tr>
+<td width="50%" valign="top"><img src="branding/screenshots/es/03-shortcuts.png" alt="Atajos globales y remapeos"><br>Atajos de teclado: Cada combinación dibujada tecla a tecla, como está en el teclado.</td>
+<td width="50%" valign="top"><img src="branding/screenshots/es/04-guide.png" alt="Guía interactiva"><br>Guía interactiva: Un tour que te lleva por la ventana real, resaltando cada botón.</td>
+</tr>
+</table>
 
-<p align="center"><em>Pantalla principal: capas, luz RGB por capa y cada tecla mostrando la acción que tiene asignada.</em></p>
+<table>
+<tr>
+<td width="50%" valign="top"><img src="branding/screenshots/es/06-settings.png" alt="Pestaña de ajustes"><br>Ajustes: Arrancar con Windows, si las teclas responden ahora mismo, qué teclado tienes, dónde está tu configuración e idioma.</td>
+<td width="50%"></td>
+</tr>
+</table>
 
-| Elige tu teclado | Editor de acciones |
-| :--: | :--: |
-| <img src="branding/screenshots/es/05-models.png" alt="Selector de modelo de teclado" /> | <img src="branding/screenshots/es/02-editor.png" alt="Editor de acciones" /> |
-| Se elige por lo que se puede contar: teclas y perillas. | Cada acción, su color, y si debe funcionar con la app cerrada. |
-
-| Atajos de teclado | Guía interactiva |
-| :--: | :--: |
-| <img src="branding/screenshots/es/03-shortcuts.png" alt="Atajos globales y remapeos" /> | <img src="branding/screenshots/es/04-guide.png" alt="Guía interactiva" /> |
-| Cada combinación dibujada tecla a tecla, como está en el teclado. | Un tour que te lleva por la ventana real, resaltando cada botón. |
-
-| Ajustes | |
-| :--: | :--: |
-| <img src="branding/screenshots/es/06-settings.png" alt="Pestaña de ajustes" /> | Arrancar con Windows, si las teclas responden ahora mismo, qué teclado tienes, dónde está tu configuración e idioma. |
-
----
-
-## ⬇️ Descargar
+## Descargar
 
 **[Descargar el instalador de Windows](https://github.com/Mun1to/hotkeyconfig/releases/latest/download/hotkeyconfig-setup.exe)**
 o mira [todas las descargas](https://github.com/Mun1to/hotkeyconfig/releases/latest).
@@ -93,15 +73,13 @@ con Windows. Tu configuración se guarda en `%LOCALAPPDATA%\hotkeyconfig\profile
 > **Más información** y luego **Ejecutar de todas formas**, o compílala tú desde el código
 > (instrucciones más abajo).
 
-## 🔄 Actualizaciones automáticas
+## Actualizaciones automáticas
 
 La app consulta los releases de GitHub y te ofrece la nueva versión en un aviso. Las
 actualizaciones se descargan **solo por HTTPS desde GitHub** y se **verifica su SHA256** antes de
 ejecutar nada.
 
----
-
-## 🎹 Hardware compatible
+## Hardware compatible
 
 Macropads con el chip **ch57x**. Estos teclados se venden con mil nombres distintos y sin ningún
 número de modelo impreso, así que en la app eliges el tuyo por lo que se puede contar: cuántas
@@ -139,24 +117,10 @@ caso.
 
 Cada perilla tiene tres acciones: girar a la izquierda, pulsar y girar a la derecha.
 
----
-
-## ⌨️ Cómo se usa
-
-1. **Enchufa el macropad** y pulsa **Flashear teclado**. Eso graba un código único por tecla en la
-   memoria del propio teclado. Solo hay que hacerlo una vez y persiste sin la app.
-2. **Haz clic en una tecla o perilla** y elige qué hace. Para abrir un programa, escribe su nombre y
-   **elígelo de la lista de lo que tienes instalado** (sale con su icono), o pulsa la carpeta para
-   buscar el archivo. Pulsa **Probar** para verlo al momento.
-3. **Ajustes -> «Arrancar con Windows»** y olvídate: el listener arranca con Windows, así que tus
-   teclas responden con esta ventana cerrada y después de reiniciar. El interruptor de debajo,
-   «Teclas funcionando ahora», enciende y apaga el listener solo para este rato, y al apagarlo
-   también para el que hubiera arrancado Windows al iniciar sesión.
-
 > La parte única vive **en la memoria del teclado**, así que persiste. El listener solo hace falta
 > para **ejecutar tus acciones**: si no está en marcha, esas acciones simplemente no se disparan.
 
-### Tipos de acción
+## Tipos de acción
 
 | `type` | Qué hace | Campos |
 |--------|----------|--------|
@@ -174,7 +138,7 @@ En `open`, el `target` puede ser una ruta, una URL o `app:<id>`, que es lo que g
 elegir un programa de la lista. Ese identificador se lo da Windows, así que funciona igual con
 programas de la Microsoft Store, que no tienen ninguna ruta a la que apuntar.
 
-### Combinaciones que ya usa otro programa
+## Combinaciones que ya usa otro programa
 
 Los combos que se graban en el teclado (`Ctrl+Alt+F13` y parecidos) están pensados para que ningún
 otro programa los use, pero eso no lo garantiza nada: en el ordenador donde se escribió esto, 7 de
@@ -184,7 +148,7 @@ La app se lo pregunta a Windows y avisa en la pantalla del macropad, con un bot�
 combinaciones libres (solo se mueven las teclas afectadas, y hay que reflashear). Lo mismo al grabar
 un atajo del teclado normal: si ya es de Windows, te dice para qué lo usa antes de que lo asignes.
 
-### Que una tecla funcione con la app cerrada
+## Que una tecla funcione con la app cerrada
 
 El listener es quien ejecuta tus acciones: sin él, la tecla manda su combinación y no pasa nada. Para
 las acciones de **abrir** hay una salida, marcando **Funciona con la app cerrada** en el editor de la
@@ -208,9 +172,7 @@ Lo que conviene saber antes de usarlo:
 > los dos casos la ventana pasa al primer plano, así que al pulsar la tecla vas a lo que acabas de
 > abrir en vez de quedarte en la aplicación donde estabas.
 
----
-
-## 🧠 Cómo funciona
+## Cómo funciona
 
 Estos macropads no exponen un identificador por tecla: mandan **pulsaciones HID estándar**, igual
 que cualquier teclado. Para que cada tecla sea **única** hay que hacerle enviar una combinación que
@@ -230,9 +192,7 @@ Por eso el proyecto son dos mitades:
 2. **Escuchar esos combos y ejecutar acciones**, con un listener local basado en la librería
    [`keyboard`](https://pypi.org/project/keyboard/), en un icono de bandeja.
 
----
-
-## 🔒 Privacidad
+## Privacidad
 
 - El listener **solo** reacciona a los combos `F13` a `F24` configurados.
 - **No** registra, almacena ni transmite tus pulsaciones normales, y **no** hace llamadas de red.
@@ -240,9 +200,23 @@ Por eso el proyecto son dos mitades:
 
 Todo el detalle, la política de dependencias y el estado de auditoría en [SECURITY.md](SECURITY.md).
 
----
+## Hoja de ruta
 
-## 🛠️ Para desarrolladores
+- **Más teclados.** Hoy solo se admite la familia ch57x (`1189:8842`, k884x), porque el protocolo
+  de configuración es específico de cada modelo. El siguiente es el **K8850** (`514c:8850`, 16
+  teclas y 3 perillas), que además es interesante por sí mismo: ese sí admite **RGB real por
+  tecla**, algo que el k884x no puede hacer de ninguna manera.
+- **Firmar el ejecutable**, para quitar el aviso de SmartScreen.
+
+¿Tienes otro macropad y quieres que funcione? Abre un issue con su identificador USB
+(`hotkeyconfig detect`) y, si puedes, una captura USB del software del fabricante
+configurándolo.
+
+## No te fíes, compruébalo
+
+No hace falta que te fíes. Abre [AI-AUDIT.md](AI-AUDIT.md), pega ese texto en tu IA y te dirá en tu idioma qué hace este programa de verdad: qué envía por internet, qué toca en tu ordenador y qué ejecuta al instalarse.
+
+## Para desarrolladores
 
 Solo hace falta Python 3.11+ (nada de Rust):
 
@@ -279,21 +253,7 @@ Regenerar las capturas del README (abre la app con un perfil de demostración, n
 Ejemplo de perfil: [`config/profile.example.yaml`](config/profile.example.yaml). Notas del
 protocolo: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 
----
-
-## 🧭 Hoja de ruta
-
-- **Más teclados.** Hoy solo se admite la familia ch57x (`1189:8842`, k884x), porque el protocolo
-  de configuración es específico de cada modelo. El siguiente es el **K8850** (`514c:8850`, 16
-  teclas y 3 perillas), que además es interesante por sí mismo: ese sí admite **RGB real por
-  tecla**, algo que el k884x no puede hacer de ninguna manera.
-- **Firmar el ejecutable**, para quitar el aviso de SmartScreen.
-
-¿Tienes otro macropad y quieres que funcione? Abre un issue con su identificador USB
-(`hotkeyconfig detect`) y, si puedes, una captura USB del software del fabricante
-configurándolo.
-
-## 📄 Licencia y créditos
+## Licencia y créditos
 
 MIT, ver [LICENSE](LICENSE).
 
@@ -301,3 +261,7 @@ El protocolo k884x está portado desde
 [`ch57x-keyboard-tool`](https://github.com/kriomant/ch57x-keyboard-tool) (MIT, de `kriomant`),
 enviado por HID nativo en lugar de libusb. Listener basado en
 [`keyboard`](https://pypi.org/project/keyboard/).
+
+<br>
+
+<p align="center">Hecho por <a href="https://munito.dev"><b>Munir Torres</b></a>. También suyo: <a href="https://adeorq.com">Adeorq</a> · <a href="https://vocript.app">VoCript</a> · <a href="https://winshotx.com">winshotx</a> · <a href="https://github.com/Mun1to/Expoal">Expoal</a> · <a href="https://github.com/Mun1to/froede">froede</a></p>

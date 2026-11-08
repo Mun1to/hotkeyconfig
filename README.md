@@ -1,86 +1,66 @@
 <div align="center">
 
-<img src="branding/logo-256.png" alt="HotKeyConfig" width="120" height="120" />
+<img src="branding/logo-256.png" alt="HotKeyConfig" height="88">
 
 # HotKeyConfig
 
-**Every key, your way.** Turn a cheap AliExpress macropad into a control panel where **every key runs whatever you want**.
+**Every key, your way.**
 
-🌍 English · [Español](README.es.md)
+Turn a cheap AliExpress macropad into a control panel where **every key runs whatever you want**.
 
-<p>
-  <a href="https://github.com/Mun1to/hotkeyconfig/releases/latest">
-    <img src="https://img.shields.io/github/v/release/Mun1to/hotkeyconfig?label=version&style=for-the-badge&color=0B4FA4" alt="Latest release" />
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-0B4FA4?style=for-the-badge" alt="MIT license" />
-  </a>
-  <a href="SECURITY.md">
-    <img src="https://img.shields.io/badge/no%20drivers-no%20Zadig-22c55e?style=for-the-badge" alt="No drivers, no Zadig" />
-  </a>
-</p>
+<a href="https://github.com/Mun1to/hotkeyconfig/releases/latest/download/hotkeyconfig-setup.exe"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/readme/download-windows-dark.svg"><img src=".github/readme/download-windows-light.svg" alt="Download the Windows installer"></picture></a>
 
-<p>
-  <a href="https://github.com/Mun1to/hotkeyconfig/releases/latest/download/hotkeyconfig-setup.exe">
-    <img src="branding/download-button-en.svg" alt="Download hotkeyconfig" width="320" height="72" />
-  </a>
-</p>
+Windows · [Licence MIT](LICENSE) · automatic updates · [no drivers, no Zadig](SECURITY.md)
+
+[All releases](https://github.com/Mun1to/hotkeyconfig/releases/latest) · [Security](SECURITY.md) · [Issues](https://github.com/Mun1to/hotkeyconfig/issues) · [Español](README.es.md)
 
 </div>
 
----
+<p align="center"><img src="branding/screenshots/en/01-macropad.png" alt="HotKeyConfig main screen"></p>
 
-## ✨ What it does
+<p align="center">Main screen: layers, per layer RGB light, and every key showing the action bound to it.</p>
+
+## What it does
 
 Those `1189:8842` macropads from AliExpress (12 keys, 2 knobs, 3 layers) ship with proprietary
 software handed out through a Google Drive link. `hotkeyconfig` replaces it with an open source
 desktop app that programs the keyboard **over native Windows HID**, then runs your actions.
 
-- 🎹 **Every key and knob does what you want**: run scripts, open apps, folders or URLs, type text,
-  control media, send shortcuts, operate windows, or chain several actions in sequence.
-- ⌨️ **Your normal keyboard too**: record any combo (say `Ctrl+Alt+S`) and bind an action to it, and
-  **remap single keys** (`Caps Lock` to `Esc`).
-- 🌈 **RGB lighting**: color and mode (solid, on press, wave) per layer, written into the keyboard.
-- 💡 **Colour feedback per action**: give a control a colour and the keyboard flashes it when you
-  press it, then goes back to the layer colour. Note this is **only while pressing**: the ch57x
-  cannot hold a different colour on each key (see [docs/PROTOCOL.md](docs/PROTOCOL.md)), and it
-  needs the listener running.
-- 🧩 **Pick your keyboard from a list**: eight shapes, from 3 keys and a knob up to 16 and three,
-  with the knobs where you actually have them.
-- 🚪 **Keys that work with the app closed**: opening a program or a link can be handed over to
-  Windows, and it responds without the listener (see below, it has its limits).
-- 🖥️ **Real desktop app**: visual editor, light/dark theme that follows your system, English and
-  Spanish, start with Windows, installer and **automatic updates**.
-- 🔒 **Private by design**: no telemetry, no network calls in the listener, and it is **not a
-  keylogger** (see [SECURITY.md](SECURITY.md)).
+|  |  |
+|---|---|
+| **Every key and knob does what you want** | run scripts, open apps, folders or URLs, type text, control media, send shortcuts, operate windows, or chain several actions in sequence. |
+| **Your normal keyboard too** | record any combo (say `Ctrl+Alt+S`) and bind an action to it, and **remap single keys** (`Caps Lock` to `Esc`). |
+| **RGB lighting** | color and mode (solid, on press, wave) per layer, written into the keyboard. |
+| **Colour feedback per action** | give a control a colour and the keyboard flashes it when you press it, then goes back to the layer colour. Note this is **only while pressing**: the ch57x cannot hold a different colour on each key (see [docs/PROTOCOL.md](docs/PROTOCOL.md)), and it needs the listener running. |
+| **Pick your keyboard from a list** | eight shapes, from 3 keys and a knob up to 16 and three, with the knobs where you actually have them. |
+| **Keys that work with the app closed** | opening a program or a link can be handed over to Windows, and it responds without the listener (see below, it has its limits). |
+| **Real desktop app** | visual editor, light/dark theme that follows your system, English and Spanish, start with Windows, installer and **automatic updates**. |
+| **Private by design** | no telemetry, no network calls in the listener, and it is **not a keylogger** (see [SECURITY.md](SECURITY.md)). |
 
----
+## Screenshots
 
-## 📸 Screenshots
+<table>
+<tr>
+<td width="50%" valign="top"><img src="branding/screenshots/en/05-models.png" alt="Keyboard model picker"><br>Pick your keyboard: Choose it by what you can count, keys and knobs.</td>
+<td width="50%" valign="top"><img src="branding/screenshots/en/02-editor.png" alt="Action editor"><br>Action editor: Every action, its colour, and whether it should work with the app closed.</td>
+</tr>
+</table>
 
-<div align="center">
-  <img src="branding/screenshots/en/01-macropad.png" alt="HotKeyConfig main screen" width="820" />
-</div>
+<table>
+<tr>
+<td width="50%" valign="top"><img src="branding/screenshots/en/03-shortcuts.png" alt="Global shortcuts and remaps"><br>Keyboard shortcuts: Every combo drawn key by key, the way it sits on the keyboard.</td>
+<td width="50%" valign="top"><img src="branding/screenshots/en/04-guide.png" alt="Interactive guide"><br>Interactive guide: A tour through the real window, highlighting each button.</td>
+</tr>
+</table>
 
-<p align="center"><em>Main screen: layers, per layer RGB light, and every key showing the action bound to it.</em></p>
+<table>
+<tr>
+<td width="50%" valign="top"><img src="branding/screenshots/en/06-settings.png" alt="Settings tab"><br>Settings: Start with Windows, whether the keys answer right now, which keyboard you have, where your configuration lives, and the language.</td>
+<td width="50%"></td>
+</tr>
+</table>
 
-| Pick your keyboard | Action editor |
-| :--: | :--: |
-| <img src="branding/screenshots/en/05-models.png" alt="Keyboard model picker" /> | <img src="branding/screenshots/en/02-editor.png" alt="Action editor" /> |
-| Choose it by what you can count, keys and knobs. | Every action, its colour, and whether it should work with the app closed. |
-
-| Keyboard shortcuts | Interactive guide |
-| :--: | :--: |
-| <img src="branding/screenshots/en/03-shortcuts.png" alt="Global shortcuts and remaps" /> | <img src="branding/screenshots/en/04-guide.png" alt="Interactive guide" /> |
-| Every combo drawn key by key, the way it sits on the keyboard. | A tour through the real window, highlighting each button. |
-
-| Settings | |
-| :--: | :--: |
-| <img src="branding/screenshots/en/06-settings.png" alt="Settings tab" /> | Start with Windows, whether the keys answer right now, which keyboard you have, where your configuration lives, and the language. |
-
----
-
-## ⬇️ Download
+## Download
 
 **[Download the Windows installer](https://github.com/Mun1to/hotkeyconfig/releases/latest/download/hotkeyconfig-setup.exe)**
 or browse [all releases](https://github.com/Mun1to/hotkeyconfig/releases/latest).
@@ -91,14 +71,12 @@ start with Windows. Your configuration lives in `%LOCALAPPDATA%\hotkeyconfig\pro
 > Windows SmartScreen may warn about an unknown publisher: the app is not code signed yet. Choose
 > **More info** and then **Run anyway**, or build it yourself from source (instructions below).
 
-## 🔄 Automatic updates
+## Automatic updates
 
 The app checks GitHub Releases and offers the new version in a banner. Updates are downloaded over
 **HTTPS from GitHub only** and their **SHA256 is verified** before anything is executed.
 
----
-
-## 🎹 Supported hardware
+## Supported hardware
 
 Macropads built on the **ch57x** chip family. These boards are sold under dozens of names with no
 model number printed anywhere, so pick yours in the app by what you can count: how many keys and
@@ -134,24 +112,10 @@ author owns. The rest share the same protocol and should work; reports are welco
 
 Every knob has three actions: turn left, press, turn right.
 
----
-
-## ⌨️ How to use it
-
-1. **Plug in the macropad** and press **Flash keyboard**. This writes a unique code for every key
-   into the keyboard's own memory. It only has to be done once, and it survives without the app.
-2. **Click any key or knob** and pick what it does. To open a program, type its name and **pick it
-   from the list of what you have installed** (icon included), or press the folder to browse for the
-   file. Press **Test** to try it right away.
-3. **Settings -> "Start with Windows"** and forget about it: the listener starts with Windows, so
-   your keys answer with this window closed and after a restart. The switch right below it,
-   "Keys working right now", turns the listener on and off for this session only, and turning it
-   off also stops the one Windows started at login.
-
 > The unique part lives **in the keyboard's memory**, so it persists. The listener is only needed to
 > **run your actions**: if it is not running, those actions simply do not fire.
 
-### Action types
+## Action types
 
 | `type` | What it does | Fields |
 |--------|--------------|--------|
@@ -169,7 +133,7 @@ On `open`, `target` can be a path, a URL, or `app:<id>`, which is what the inter
 pick a program from the list. Windows hands out that id, so it works just as well for Microsoft
 Store apps, which have no path to point at.
 
-### Combinations another program already holds
+## Combinations another program already holds
 
 The combos written into the keyboard (`Ctrl+Alt+F13` and friends) are meant to be ones nothing else
 uses, but nothing guarantees that: on the machine this was written on, 7 of the 54 were already
@@ -180,7 +144,7 @@ combinations (only the affected keys move, and the keyboard needs flashing again
 record a shortcut on your normal keyboard: if Windows already uses it, you are told what for before
 you assign it.
 
-### Making a key work with the app closed
+## Making a key work with the app closed
 
 The listener is what runs your actions: without it a key sends its combo and nothing happens. For
 **open** actions there is a way out, ticking **Works with the app closed** in the key editor. The
@@ -203,9 +167,7 @@ Worth knowing before relying on it:
 > the window is brought to the front, so a key press takes you to what you just opened instead of
 > leaving it behind whatever you were working on.
 
----
-
-## 🧠 How it works
+## How it works
 
 These macropads do not expose a per key identifier: they send **standard HID keystrokes**, exactly
 like any keyboard. To make each key **unique** it has to send a combo no physical keyboard produces.
@@ -224,9 +186,7 @@ So the project is two halves:
 2. **Listening for those combos and running actions**, with a local listener built on the
    [`keyboard`](https://pypi.org/project/keyboard/) library, living in a tray icon.
 
----
-
-## 🔒 Privacy
+## Privacy
 
 - The listener **only** reacts to the configured `F13` to `F24` combos.
 - It does **not** record, store or transmit your normal keystrokes, and makes **no** network calls.
@@ -234,11 +194,20 @@ So the project is two halves:
 
 Full detail, dependency policy and audit status in [SECURITY.md](SECURITY.md).
 
----
+## Roadmap
 
-## 🔍 Don't trust it, check it
+- **More keyboards.** Today only the ch57x family (`1189:8842`, k884x) is supported, because the
+  configuration protocol is specific to each model. The next one is the **K8850**
+  (`514c:8850`, 16 keys and 3 knobs), which is interesting on its own: it does support **true
+  per-key RGB**, something the k884x cannot do at all.
+- **Code signing**, to drop the SmartScreen warning.
 
-Open source only helps if somebody actually reads the code, and almost nobody does. So
+Got a different macropad and want it supported? Open an issue with its USB id (`hotkeyconfig
+detect`) and, if you can, a USB capture of the vendor software configuring it.
+
+## Don't trust it, check it
+
+Published code only helps if somebody actually reads it, and almost nobody does. So
 instead of asking you to trust this project, here is the prompt to check it: point your own
 AI agent at this repository and get a security report, in your language, in a few minutes,
 even if you do not know how to program.
@@ -250,7 +219,7 @@ whatever you use. It is the same prompt in every public repository here, so you 
 > y te dirá en tu idioma qué hace este programa de verdad: qué envía por internet, qué toca
 > en tu ordenador y qué ejecuta al instalarse.
 
-## 🛠️ For developers
+## For developers
 
 Python 3.11+ is all you need (no Rust):
 
@@ -287,23 +256,14 @@ Regenerate the README screenshots (opens the app with a demo profile, never touc
 Profile example: [`config/profile.example.yaml`](config/profile.example.yaml). Protocol notes:
 [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
 
----
-
-## 🧭 Roadmap
-
-- **More keyboards.** Today only the ch57x family (`1189:8842`, k884x) is supported, because the
-  configuration protocol is specific to each model. The next one is the **K8850**
-  (`514c:8850`, 16 keys and 3 knobs), which is interesting on its own: it does support **true
-  per-key RGB**, something the k884x cannot do at all.
-- **Code signing**, to drop the SmartScreen warning.
-
-Got a different macropad and want it supported? Open an issue with its USB id (`hotkeyconfig
-detect`) and, if you can, a USB capture of the vendor software configuring it.
-
-## 📄 License and credits
+## License and credits
 
 MIT, see [LICENSE](LICENSE).
 
 The k884x protocol is ported from [`ch57x-keyboard-tool`](https://github.com/kriomant/ch57x-keyboard-tool)
 (MIT, by `kriomant`), sent over native HID instead of libusb. Listener built on
 [`keyboard`](https://pypi.org/project/keyboard/).
+
+<br>
+
+<p align="center">Made by <a href="https://munito.dev"><b>Munir Torres</b></a>. Also by him: <a href="https://adeorq.com">Adeorq</a> · <a href="https://vocript.app">VoCript</a> · <a href="https://winshotx.com">winshotx</a> · <a href="https://github.com/Mun1to/Expoal">Expoal</a> · <a href="https://github.com/Mun1to/froede">froede</a></p>

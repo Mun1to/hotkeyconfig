@@ -20,6 +20,15 @@ Windows · [Licence MIT](LICENSE) · automatic updates · [no drivers, no Zadig]
 
 <p align="center">Main screen: layers, per layer RGB light, and every key showing the action bound to it.</p>
 
+## How it works
+
+<p align="center"><picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset=".github/readme/how-it-works-dark-narrow.svg">
+<source media="(max-width: 600px)" srcset=".github/readme/how-it-works-light-narrow.svg">
+<source media="(prefers-color-scheme: dark)" srcset=".github/readme/how-it-works-dark.svg">
+<img src=".github/readme/how-it-works-light.svg" alt="Plug in the macropad and press Flash keyboard.: This writes a unique code for every key into the keyboard's own memory. It only has to be done once, and it survives without the app. Click any key or knob and pick what it does.: To open a program, type its name and pick it from the list of what you have installed (icon included), or press the folder to browse for the file. Press Test to try it right away. Settings &gt; &quot;Start with Windows&quot; and forget about it.: The listener starts with Windows, so your keys answer with this window closed and after a restart.">
+</picture></p>
+
 ## What it does
 
 Those `1189:8842` macropads from AliExpress (12 keys, 2 knobs, 3 layers) ship with proprietary
@@ -71,10 +80,13 @@ start with Windows. Your configuration lives in `%LOCALAPPDATA%\hotkeyconfig\pro
 > Windows SmartScreen may warn about an unknown publisher: the app is not code signed yet. Choose
 > **More info** and then **Run anyway**, or build it yourself from source (instructions below).
 
-## Automatic updates
+<details>
+<summary><b>Automatic updates</b></summary>
 
 The app checks GitHub Releases and offers the new version in a banner. Updates are downloaded over
 **HTTPS from GitHub only** and their **SHA256 is verified** before anything is executed.
+
+</details>
 
 ## Supported hardware
 
@@ -219,7 +231,8 @@ whatever you use. It is the same prompt in every public repository here, so you 
 > y te dirá en tu idioma qué hace este programa de verdad: qué envía por internet, qué toca
 > en tu ordenador y qué ejecuta al instalarse.
 
-## For developers
+<details>
+<summary><b>For developers</b></summary>
 
 Python 3.11+ is all you need (no Rust):
 
@@ -255,6 +268,8 @@ Regenerate the README screenshots (opens the app with a demo profile, never touc
 
 Profile example: [`config/profile.example.yaml`](config/profile.example.yaml). Protocol notes:
 [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
+
+</details>
 
 ## License and credits
 

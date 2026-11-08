@@ -20,6 +20,15 @@ Windows · [Licencia MIT](LICENSE) · actualizaciones automáticas · [sin drive
 
 <p align="center">Pantalla principal: capas, luz RGB por capa y cada tecla mostrando la acción que tiene asignada.</p>
 
+## Cómo funciona
+
+<p align="center"><picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset=".github/readme/how-it-works-dark-narrow.es.svg">
+<source media="(max-width: 600px)" srcset=".github/readme/how-it-works-light-narrow.es.svg">
+<source media="(prefers-color-scheme: dark)" srcset=".github/readme/how-it-works-dark.es.svg">
+<img src=".github/readme/how-it-works-light.es.svg" alt="Enchufa el macropad y pulsa Flashear teclado.: Eso graba un código único por tecla en la memoria del propio teclado. Solo hay que hacerlo una vez y persiste sin la app. Haz clic en una tecla o perilla y elige qué hace.: Para abrir un programa, escribe su nombre y elígelo de la lista de lo que tienes instalado (sale con su icono), o pulsa la carpeta para buscar el archivo. Pulsa Probar para verlo al momento. Ajustes &gt; «Arrancar con Windows» y olvídate.: El listener arranca con Windows, así que tus teclas responden con esta ventana cerrada y después de reiniciar.">
+</picture></p>
+
 ## Qué hace
 
 Esos macropads `1189:8842` de AliExpress (12 teclas, 2 perillas, 3 capas) vienen con un software
@@ -73,11 +82,14 @@ con Windows. Tu configuración se guarda en `%LOCALAPPDATA%\hotkeyconfig\profile
 > **Más información** y luego **Ejecutar de todas formas**, o compílala tú desde el código
 > (instrucciones más abajo).
 
-## Actualizaciones automáticas
+<details>
+<summary><b>Actualizaciones automáticas</b></summary>
 
 La app consulta los releases de GitHub y te ofrece la nueva versión en un aviso. Las
 actualizaciones se descargan **solo por HTTPS desde GitHub** y se **verifica su SHA256** antes de
 ejecutar nada.
+
+</details>
 
 ## Hardware compatible
 
@@ -216,7 +228,8 @@ configurándolo.
 
 No hace falta que te fíes. Abre [AI-AUDIT.md](AI-AUDIT.md), pega ese texto en tu IA y te dirá en tu idioma qué hace este programa de verdad: qué envía por internet, qué toca en tu ordenador y qué ejecuta al instalarse.
 
-## Para desarrolladores
+<details>
+<summary><b>Para desarrolladores</b></summary>
 
 Solo hace falta Python 3.11+ (nada de Rust):
 
@@ -252,6 +265,8 @@ Regenerar las capturas del README (abre la app con un perfil de demostración, n
 
 Ejemplo de perfil: [`config/profile.example.yaml`](config/profile.example.yaml). Notas del
 protocolo: [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
+
+</details>
 
 ## Licencia y créditos
 
